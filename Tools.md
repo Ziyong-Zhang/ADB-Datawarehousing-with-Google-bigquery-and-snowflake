@@ -10,7 +10,6 @@
 - Data generating: [Manual_1_local](https://tedamoh.com/en/blog/55-data-modeling/78-generating-large-example-data-with-tpc-h)
 - For `XXX.tbl` files, however, there is a bug in `dbgen` which generates an extra `|` at the end of each line. To fix it, run the following command:
 - $ `for i in `ls *.tbl`; do sed 's/|$//' $i > ${i/tbl/csv}; echo $i; done;`
-- 
 
 # Google BigQuery
 
@@ -20,6 +19,7 @@
 hmac1-455@advanceddb-405622.iam.gserviceaccount.com
 
 访问密钥GOOG1E6FKGZ5WLHO3NNSF77PBZCYPZPK2VED3LYQH3XIOL2YVJZPRNLBA3JDK
+
 密钥
 32A8aEifoLYJcF1XTofOhx5zcXEfVeJ0aFrPwtaA
 
