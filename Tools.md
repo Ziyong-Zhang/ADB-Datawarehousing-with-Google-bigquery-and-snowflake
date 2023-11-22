@@ -188,7 +188,7 @@ PUT file:///path/to/generated/data/*.tbl @your_external_stage;
     - import snowflake.connector
 - Connect using the default authenticator
     - account url: [https://wv59487.europe-west4.gcp.snowflakecomputing.com](https://wv59487.europe-west4.gcp.snowflakecomputing.com/)
-    account identifier: wv59487.europe-west4.gcp
+	account identifier: wv59487.europe-west4.gcp
         
         organization: **TTUZQMN**
         
