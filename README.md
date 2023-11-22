@@ -3,7 +3,7 @@
 This is the workspace of the group project Advanced Database
 
 <aside>
-👋 Topic: **Data warehousing** with **Google BigQuery** and **Snowflake**
+👋 Topic: **Data** warehousing with Google BigQuery and Snowflake**
 
 - Deadline: **Monday, December 11, 2023**
 - Website: [Course_Project](https://cs.ulb.ac.be/public/teaching/infoh415#project)
@@ -32,7 +32,7 @@ This is the workspace of the group project Advanced Database
 
 ---
 
-### 1**. 选择数据集：**
+### **1. 选择数据集：**
 
 ### a. available datasets in the internet：
 
