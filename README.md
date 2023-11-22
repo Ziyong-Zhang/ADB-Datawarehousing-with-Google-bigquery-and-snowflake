@@ -36,8 +36,7 @@ This is the workspace of the group project Advanced Database
 
 ### a. available datasets in the internet：
 
-- Kaggle: **[Airline Customer Holiday Booking Dataset](https://www.kaggle.com/datasets/manishkumar7432698/airline-passangers-booking-data?select=Survey+data_Inflight+Satisfaction+Score.csv)**
-- Kaggle: [Customer subscription data](https://www.kaggle.com/datasets/gsagar12/dspp1?select=product_info.csv)
+- Kaggle
 
 ### b. data generators：
 
