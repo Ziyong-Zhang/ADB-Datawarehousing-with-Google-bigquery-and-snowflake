@@ -15,7 +15,7 @@ This is the workspace of the group project Advanced Database
 
 1. Benchmark the proposed tool in relation to the database requirements of your application.
 
-[Tools](Home%209f18dd2c42df424ab484489dd916d990/Tools%2040065113c5074120add8f9416dd13bfd.md)
+2. [Tools](Tools.md)
 
 ## Requirements
 
