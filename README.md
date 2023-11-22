@@ -3,6 +3,7 @@
 This is the workspace of the group project Advanced Database
 
 <aside>
+    
 👋 Topic: **Data warehousing with Google BigQuery and Snowflake**
 
 - Overleaf link invitation: [overleaf](https://www.overleaf.com/4131969233szkcgcnjhxkq#df4862)
