@@ -9,6 +9,15 @@ This is the workspace of the group project Advanced Database
 - Overleaf link invitation: [overleaf](https://www.overleaf.com/4131969233szkcgcnjhxkq#df4862)
 - Deadline: **Monday, December 11, 2023**
 - Website: [Course_Project](https://cs.ulb.ac.be/public/teaching/infoh415#project)
+
+</aside>
+
+## 分工
+1. 文档部分：Chapter1:Introduction, Chapter2: Data warehouse 介绍
+2. ziyong： Setting up + throughput test + power test 文档部分 
+3. Maintainess test执行 + 文档部分
+4. 可视化 + ppt
+
 </aside>
 
 ## Objective
