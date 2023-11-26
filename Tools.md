@@ -206,7 +206,7 @@ PUT file:///path/to/generated/data/*.tbl @your_external_stage;
         **SNOWFLAKE_SAMPLE_DATA
         ADB**
         
-        schema: **TPCH_SF1 , TPCH_SF10 , TPCH_SF100 , TPCH_SF1000**
+        schema: **PUBLIC , TPCH_1 , TPCH_2 , TPCH_3**
         
         conn = snowflake.connector.connect(
         user=USER,
