@@ -16,7 +16,7 @@ This is the workspace of the group project Advanced Database
 1. 文档部分：Chapter1:Introduction, Chapter2: Data warehouse 介绍
 2. **ziyong：** Setting up + throughput test + power test 文档部分 
 3. Maintainess test执行 + 文档部分
-4. 可视化 + ppt
+4. 结果可视化 + conclusion + ppt
 
 </aside>
 
