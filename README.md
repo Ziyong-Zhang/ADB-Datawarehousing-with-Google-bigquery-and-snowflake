@@ -111,3 +111,7 @@ This is the workspace of the group project Advanced Database
 - 不同规模下的成本，特别是在云服务上使用这些数据仓库。
 
 ###
+
+## 测试流程再梳理
+![698a4fb4435914279f47559e4448c0b](https://github.com/Ziyong-Zhang/ADB-Dataware-housing-with-Google-bigquery-and-snowflake/assets/149632845/9d0d6bca-944a-4040-b361-fdcd2446d68c)
+
