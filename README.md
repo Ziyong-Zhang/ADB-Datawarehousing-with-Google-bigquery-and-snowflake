@@ -117,6 +117,7 @@ This is the workspace of the group project Advanced Database
 
 Performance test 由两部分组成：
 1. Power Test 和 2. Throughput Test
+Performance test需要跑2次
 
 Power Test流程： 
 1.Run refresh function1  
@@ -129,4 +130,5 @@ Throughput Test流程：
 1.用户1 Run 22 query
 2.用户2 Run 22 query
 3.用户3 Run refresh function1和2  
-计算3个并行总耗时
+计算3个并行总耗时。
+
