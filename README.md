@@ -115,3 +115,18 @@ This is the workspace of the group project Advanced Database
 ## 测试流程再梳理
 ![698a4fb4435914279f47559e4448c0b](https://github.com/Ziyong-Zhang/ADB-Dataware-housing-with-Google-bigquery-and-snowflake/assets/149632845/9d0d6bca-944a-4040-b361-fdcd2446d68c)
 
+Performance test 由两部分组成：
+1. Power Test 和 2. Throughput Test
+
+Power Test流程： 
+1.Run refresh function1  
+2.Run 22 query
+3.Run refresh function2
+分别计算1，2，3的耗时
+
+Throughput Test流程：
+三个线程同时执行，实现：
+1.用户1 Run 22 query
+2.用户2 Run 22 query
+3.用户3 Run refresh function1和2  
+计算3个并行总耗时
