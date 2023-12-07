@@ -1,2 +1,0 @@
-Execution time for query 'delete from LINEITEM where L_ORDERKEY in (select O_ORDERKEY from delete_orders);': 3.9758589267730713 seconds
-Execution time for query 'delete from ORDERS where O_ORDERKEY in (select O_ORDERKEY from delete_orders);': 4.103301525115967 seconds
