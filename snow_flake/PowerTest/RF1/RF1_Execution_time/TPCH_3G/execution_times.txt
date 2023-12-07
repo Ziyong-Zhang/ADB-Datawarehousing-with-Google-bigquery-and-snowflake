@@ -1,2 +1,0 @@
-Execution time for query 'INSERT INTO ORDERS SELECT * FROM add_orders;': 0.7130236625671387 seconds
-Execution time for query 'INSERT INTO LINEITEM SELECT * FROM add_lineitem;': 0.8579111099243164 seconds
