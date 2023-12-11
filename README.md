@@ -6,17 +6,16 @@ This is the workspace of the group project Advanced Database
     
 👋 Topic: **Data warehousing with Google BigQuery and Snowflake**
 
-- Overleaf link invitation: [overleaf](https://www.overleaf.com/4131969233szkcgcnjhxkq#df4862)
 - Deadline: **Monday, December 11, 2023**
-- Website: [Course_Project](https://cs.ulb.ac.be/public/teaching/infoh415#project)
+- Course Project Website: [Course_Project](https://cs.ulb.ac.be/public/teaching/infoh415#project)
 
 </aside>
+## Group Member
 
-## 分工
-1. 文档部分：Chapter1:Introduction, Chapter2: Data warehouse 介绍
-2. **ziyong：** Setting up + throughput test + power test 文档部分 
-3. **xianyun：** Maintainess test执行 + 文档部分
-4. 结果可视化 + conclusion + ppt
+1. [Min Zhang ]()
+2. [Ziyong Zhang](https://github.com/Ziyong-Zhang)
+3. [Yutao Chen]()
+4. [Xianyun Zhuang]()
 
 </aside>
 
@@ -43,15 +42,9 @@ This is the workspace of the group project Advanced Database
 
 ---
 
-### **1. 选择数据集：**
+### **1. Data sets and benchmark selection：**
 
-### a. available datasets in the internet：
-
-- Kaggle
-
-### b. data generators：
-
-- TPC-H.
+[TPC-H](https://www.tpc.org/tpch/)
 
 ### **2. Queries and updates 定义查询和更新操作：**
 
