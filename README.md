@@ -6,10 +6,10 @@ This is the workspace of the group project Advanced Database
     
 👋 Topic: **Data warehousing with Google BigQuery and Snowflake**
 
-- Deadline: **Monday, December 11, 2023**
 - Course Project Website: [Course_Project](https://cs.ulb.ac.be/public/teaching/infoh415#project)
 
 </aside>
+
 ## Group Member
 
 1. [Min Zhang ]()
