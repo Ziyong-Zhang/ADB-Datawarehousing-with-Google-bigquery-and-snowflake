@@ -44,7 +44,7 @@ This is the workspace of the group project Advanced Database
 
 ### **1. Data sets and benchmark selection：**
 
-[TPC-H](https://www.tpc.org/tpch/)
+We use [TPC-H](https://www.tpc.org/tpch/) as our benchmark and utilise the data sets generated.
 
 ### **2. Queries and updates 定义查询和更新操作：**
 
