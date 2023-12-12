@@ -12,10 +12,10 @@ This is the workspace of the group project Advanced Database
 
 ## Group Member
 
-1. [Min Zhang ]()
+1. [Min Zhang ](https://github.com/PhDnemo)
 2. [Ziyong Zhang](https://github.com/Ziyong-Zhang)
-3. [Yutao Chen]()
-4. [Xianyun Zhuang]()
+3. [Yutao Chen](https://github.com/A-hungry-wolf)
+4. [Xianyun Zhuang](https://github.com/zhuangxianyun)
 
 </aside>
 
