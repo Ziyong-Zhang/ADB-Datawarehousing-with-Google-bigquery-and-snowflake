@@ -46,7 +46,7 @@ This is the workspace of the group project Advanced Database
 
 We use [TPC-H](https://www.tpc.org/tpch/) as our benchmark and utilise the data sets generated.
 
-### **2. Queries and updates 定义查询和更新操作：**
+### **2. Queries and updates: **
 
 ### a. Query Operations:
 
@@ -57,7 +57,9 @@ We use [TPC-H](https://www.tpc.org/tpch/) as our benchmark and utilise the data 
 
 - Data update operations: insert, update, and delete. Record times, test the write performance of the data warehouse.
 
-### **3. Benchmarking: **
+
+### ** 3. Benchmark: **
+
 
 ### a. Dataset Scale:
 
@@ -71,9 +73,8 @@ We use [TPC-H](https://www.tpc.org/tpch/) as our benchmark and utilise the data 
 
 - Record execution time.
 
-### d. Linear or Exponential Behavior:
+### d. Linear or Exponential Behavior
 
-- 观察性能随数据集规模增长的趋势，确定是线性还是指数级别的行为。
 
 ### e. Average Calculation:
 
