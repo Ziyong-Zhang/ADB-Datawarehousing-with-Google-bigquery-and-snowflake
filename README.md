@@ -42,11 +42,11 @@ This is the workspace of the group project Advanced Database
 
 ---
 
-### **1. Data sets and benchmark selection：**
+### **1. Data sets and benchmark selection:**
 
 We use [TPC-H](https://www.tpc.org/tpch/) as our benchmark and utilise the data sets generated.
 
-### **2. Queries and updates: **
+### **2. Queries and updates:**
 
 ### a. Query Operations:
 
@@ -58,7 +58,7 @@ We use [TPC-H](https://www.tpc.org/tpch/) as our benchmark and utilise the data 
 - Data update operations: insert, update, and delete. Record times, test the write performance of the data warehouse.
 
 
-### ** 3. Benchmark: **
+### **3. Benchmark:**
 
 
 ### a. Dataset Scale:
@@ -80,7 +80,7 @@ We use [TPC-H](https://www.tpc.org/tpch/) as our benchmark and utilise the data 
 
 - Calculate the average execution time for each dataset scale and query/update operation to derive comprehensive performance insights.
 
-### **4. Reporting and Analysis: **
+### **4. Reporting and Analysis:**
 
 ### a. Results Summary:
 
