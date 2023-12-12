@@ -25,7 +25,7 @@ This is the workspace of the group project Advanced Database
 
 1. Benchmark the proposed tool in relation to the database requirements of your application.
 
-2. [Tools](Tools.md)
+2. [Tools Introduction and Implementation Details](Tools.md)
 
 ## Requirements
 
@@ -34,8 +34,8 @@ This is the workspace of the group project Advanced Database
 1. For the dataset, either or:
     1. available datasets in the internet.
     2. data generators.
-2. Determine the set of queries and updates that your application requires and do a benchmark with, e.g., 1K, 10K, 100K, and 1M “objects”. (Datasets) 
-    1. —> linear or exponential behavior
+2. Determine the set of queries and updates that your application requires and do a benchmark with, e.g., 1K, 10K, 100K, and 1M “objects”. (Datasets)
+    —> linear or exponential behavior
 3. Execute n times and calculate average.
 
 ## Workflow
@@ -48,60 +48,52 @@ We use [TPC-H](https://www.tpc.org/tpch/) as our benchmark and utilise the data 
 
 ### **2. Queries and updates 定义查询和更新操作：**
 
-### a. 查询操作：
+### a. Query Operations:
 
-- 设计查询操作(sql)，包括简单查询、聚合查询、连接查询等。—-》TPC-H工具包自动生成
-- 查询时间记录。
+- Design query operations (SQL) —> TPC-H toolkit generates.
+- Record query execution times.
 
-### b. 更新操作：
+### b. Update Operations:
 
-- 数据更新操作：插入、更新和删除。记录时间，测试数据仓库的写入性能。
+- Data update operations: insert, update, and delete. Record times, test the write performance of the data warehouse.
 
-### **3. 基准测试：**
+### **3. Benchmarking: **
 
-### a. 数据集规模：
+### a. Dataset Scale:
 
-- 使用不同规模的数据集（如1K, 10K, 100K, 1M ）来测试性能。
+- Use datasets of different scales (0.5G, 1G, 2G, 3G) to test performance.
 
-### b. 测试执行次数：
+### b. Test Execution Count:
 
-- 对每个查询和更新操作，执行多次，取平均值。
+- For each query and update operation, execute 6 times and take the average.
 
-### c. 性能指标：
+### c. Performance Metrics:
 
-- 记录每个操作的执行时间、资源消耗（如CPU、内存）等性能指标。
+- Record execution time.
 
-### d. 线性或指数行为：
+### d. Linear or Exponential Behavior:
 
 - 观察性能随数据集规模增长的趋势，确定是线性还是指数级别的行为。
 
-### e. 平均计算：
+### e. Average Calculation:
 
-- 对每个数据集规模和查询/更新操作的执行时间进行平均计算，以得出综合性能。
+- Calculate the average execution time for each dataset scale and query/update operation to derive comprehensive performance insights.
 
-### **4. 报告和分析：**
+### **4. Reporting and Analysis: **
 
-### a. 结果汇总：
+### a. Results Summary:
 
-- 汇总测试结果，包括平均执行时间、资源消耗等。
+- Summarize test results.
 
-### b. 行为分析：
+### b. Behavioral Analysis:
 
-- 性能随数据集的规模变化。
+- Analyze how performance varies with changes in the dataset scale.
 
-### c. 优化建议：
+### c. Optimization Recommendations:
 
-- 根据测试结果提出可能的优化建议，例如索引优化、查询重写等。
+- Propose potential optimization recommendations based on test results.
 
-### **5. 注意事项：**
 
-### a. 保持一致性：
-
-- 在测试过程中保持环境一致，确保测试结果的可比性。
-
-### b. 考虑成本：
-
-- 不同规模下的成本，特别是在云服务上使用这些数据仓库。
 
 ###
 
