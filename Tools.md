@@ -21,26 +21,43 @@
 ## Create Table
 
 - Delete the final null column of the csv files: remove_null_col.py
+
 - Update .csv files to Google Cloud Storage.
+
 - Create null tables using BigQuery Console: BigQuery does not support primary key, the definition of some datatype is different from the original ones, which requires modification.
+
 - Using bq command to create table and load data in BigQuery Console:
-username@cloudshell:~ (project id)$ bq load --noreplace --source_format=CSV your_database_name.table_name gs://your/path/to/bucket/in/cloud/storage
 
-Create tables in database:
-$ ./create_table.sh your_database_name
+  username@cloudshell:~ (project id)$ bq load --noreplace --source_format=CSV
 
-Use the following command to write data in one go:
-$ ./load_data.sh your_database_name
-$ ./load_data.sh <your_database> <bucket_folder> 
-Use the following command to save .sh file：(ctrl+x: save，enter: exit)
-$ nano load_data.sh
-Use the following command to make .sh file executable：
-$ chmod +x load_data.sh
+  your_database_name.table_name gs://your/path/to/bucket/in/cloud/storage
+
+- Create tables in database:
+
+	$ ./create_table.sh your_database_name
+
+- Use the following command to write data in one go:
+
+	$ ./load_data.sh your_database_name
+
+	$ ./load_data.sh <your_database> <bucket_folder> 
+
+- Use the following command to save .sh file：(ctrl+x: save，enter: exit)
+
+	$ nano load_data.sh
+
+- Use the following command to make .sh file executable：
+
+	$ chmod +x load_data.sh
+
 - DATABASES:
-PUBLIC
-TPCH_1G
-TPCH_2G
-TPCH_3G
+	PUBLIC
+	
+	TPCH_1G
+	
+	TPCH_2G
+	
+	TPCH_3G
 
 ## DDL Modification
 
@@ -74,9 +91,12 @@ Shown as report.
 ## Upload data from local files
 
 - - Create Stage in Snowflake: [Reference](https://docs.snowflake.com/en/sql-reference/sql/create-stage)
-CREATE STAGE your_stage;
+
+	CREATE STAGE your_stage;
+
 - - Upload data files into stage:
-PUT file:///path/to/generated/data/*.tbl @your_stage;
+
+	PUT file:///path/to/generated/data/*.tbl @your_stage;
 
 ## Python Local Connector
 
@@ -88,14 +108,23 @@ PUT file:///path/to/generated/data/*.tbl @your_stage;
     - import snowflake.connector
 - Connect using the default authenticator
     - account url: https://your_account_identifier.snowflakecomputing.com
+
 	account identifier: **your_account_identifier**
-        organization: **your_account_organization**
-        account: **your_account**
-        locator: **your_locator**
+
+	organization: **your_account_organization**
+
+	account: **your_account**
+
+	locator: **your_locator**
+
         username: **your_user_name**
+
         password: **your_pwd**
+
         warehouse: **your_wh**
+
         database: **your_database**
+
         schema: **your_schema_1 , your_schema_2 , your_schema_3 , your_schema_4**
         
         conn = snowflake.connector.connect(
@@ -109,7 +138,8 @@ PUT file:///path/to/generated/data/*.tbl @your_stage;
         
     - Create table: /path/to/your_sql_directory/create_table.sql
     - Terminal:
-    $ snowsql -a <your_account_identifier> -u <your_user_name> -d <your_database> -s <your_schema_name>
+    
+    	$ snowsql -a <your_account_identifier> -u <your_user_name> -d <your_database> -s <your_schema_name>
     
 ## SQL Modification
 
