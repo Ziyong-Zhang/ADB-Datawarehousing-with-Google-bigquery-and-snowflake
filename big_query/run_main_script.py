@@ -4,64 +4,63 @@ import time
 import csv
 import sys
 
-# 认证文件路径
+# Service Account authentication credentials for your BigQuery account (we have deleted our json file for safety, you may replace it with your own credentials file)
 AUTH_JSON_FILE_PATH = '/Users/zzy13/Desktop/Classes_at_ULB/Advanced_Databases_415/Project/TPC-H_V3_0_1/scripts/big_query/advanceddb.json'
-# BigQuery 项目 ID
+# BigQuery project ID
 PROJECT_ID = 'advanceddb-405622'
-# SQL 文件夹路径
+# SQL folder path
 SQL_FOLDER_PATH = '/Users/zzy13/Desktop/Classes_at_ULB/Advanced_Databases_415/Project/TPC-H_V3_0_1/dbgen/queries_test_bq/queries_bq_general'
 
-# 在脚本中添加以下代码以获取命令行参数
+# get the parameters
 if len(sys.argv) != 2:
     print("Usage: python your_script.py <dataset_name>")
     sys.exit(1)
 dataset_name = sys.argv[1]
 
-# 输出 CSV 文件路径
+# output CSV file path
 output_folder = os.path.join(SQL_FOLDER_PATH,'Execution_time', f'{dataset_name}')
 os.makedirs(output_folder, exist_ok=True)
 OUTPUT_CSV_PATH = os.path.join(output_folder, 'execution_times.csv')
 
-# 获取所有 SQL 文件列表
+# get all the SQL files
 sql_files = [os.path.join(SQL_FOLDER_PATH, file) for file in os.listdir(SQL_FOLDER_PATH) if file.endswith(".sql")]
 
 
-# 写入 CSV 文件头
+# write CSV 
 with open(OUTPUT_CSV_PATH, 'w', newline='') as csvfile:
     csv_writer = csv.writer(csvfile)
     csv_writer.writerow(['Run_Number','SQL_File', 'Run_Time'])
 
-# 初始化 BigQuery 客户端
+# initialize BigQuery 
 client = bigquery.Client.from_service_account_json(AUTH_JSON_FILE_PATH)
 
-# 循环遍历每个 SQL 文件
+# loop for every SQL file
 for sql_file in sql_files:
-    # 提取表名
+    # get the file name
     table_name = os.path.basename(sql_file).replace('.sql', '')
 
-    # 替换 SQL 文件中的占位符
+    # replace the dataset_name in SQL file
     with open(sql_file, 'r') as file:
         sql_content = file.read()
         sql_content = sql_content.replace('${PROJECT_ID}', PROJECT_ID)
-        # 这里将 dataset_name 替换为你的输入值，例如 'PUBLIC'
+        # replace dataset_name, e.g. 'PUBLIC'
         sql_content = sql_content.replace('${DATASET}', dataset_name)
 
-    # 循环执行 6 次
+    # loop for 6 times
     for run_number in range(1, 7):
-        # 记录 SQL 文件名、执行时间和运行次数的起始时间
+        # record SQL file name, execution time 
         start_time = time.time()
 
-        # 执行 BigQuery 查询
+        # execute BigQuery 
         query_job = client.query(sql_content)
 
-        # 等待查询完成
         query_job.result()
 
-        # 计算运行时间
+        # execution time calculation
         end_time = time.time()
         run_time = end_time - start_time
 
-        # 追加运行时间和运行次数到 CSV 文件
+        # add to CSV file
         with open(OUTPUT_CSV_PATH, 'a', newline='') as csvfile:
             csv_writer = csv.writer(csvfile)
             csv_writer.writerow([run_number, table_name, run_time])
