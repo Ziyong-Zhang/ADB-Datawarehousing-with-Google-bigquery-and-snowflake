@@ -1,13 +1,13 @@
 {
   "type": "service_account",
   "project_id": "advanceddb-405622",
-  "private_key_id": "36bf2bd172c30a1b00cda7fc0545df54c4ed98cb",
-  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDQ8yr99XbmuZfa\nu/ISOsMx0f6AT9NA2c1d4p12Pui7tmvCpGzvdJNaPE2aSShiCBLX/f8tsscDHeYa\nRHmDrfzfU9lNH3OfvJXC7gM3nENb1HCZed83+xz8oIW/ufGvlUyNc0O58z1xwoQV\nTWQ1d/YGOCkSVgVAgyjAx29nZq0Xd1KG80Oz2OIf7x89fU3J+G2hECKr0Z1Oz6+E\n20usRfbYHLBA2DB/Kxt1wpQWP71TjFudT2xJzgxsj+zH8oRV/VCTg1P/qWrxbBAk\nhPLs3YRWtGLEA83tlSfxTD/ABmMTcaa9ae3ba9Py7LAwnjmV9U7Vgu49ODJe/Xr/\nkxuFu/bvAgMBAAECggEAChxMxGzIEUJXazxJ6oDmaLbmZN4NSlI1Aj8mFbkrOMi1\nw9LXTz+UURBMRFQYPKTIXfmKi0hfId2kqzkMqjGqjpc3k2hGB4DavEvDuGv6xGrt\n/IyC9RSqYpJVNnbwZL8e16oFU8ObLFyDA1GIhkp6NfMqEEWSS9ICOvsg1F+Jrkdq\nML63SEpcNR/yZUVXG7Vrz+3rIue5tYaO+NMMxuotrDhSALeXYJVQaWYtG38uTlTB\nofwxDJKlDNBqKQZqZhFS+IwzD8DcCqIs1p90DIChSBRImSXEztxG0d0GlczE7jr1\n5BSfCfgeYEz4RYw90xho78KX1Fd448sfdxaU8w3a2QKBgQD6jWno+QVkYEAdUqFe\nN3LusUuMt3yh1hvMEV/KFKiYXI2nr8XxebDb42v3CUgRb8DmgPOduTQDQfT9nlqt\nIOAq4DybCG6yqbHJe3fmOtlnpQzO143EQ4f1G8dQpdZWI1xqzj+EF0r4wp4MVFZ1\npxu2sDrkGSkpf6fQMyYuOWpltwKBgQDVfjFRqTBsCzSAhU/bTkp+8tt3d5enZotZ\nnljP6gOablHrFa9xEl1xSFFTR10pZJ3/VkEcOuu8RuO5uc51eZDvI5FYnxTZLVpH\nrBvILMLVoxCJOCrNrGLEvM1gpV+bdkmdzKdbJay3JoLg2T0Q2jtrfVpDaKOilTLu\n+5EFwtC4iQKBgHwO/Tvv4W2cAuMCAQinp+7sNp5MVBfF7imTCL0EkZ4vZax76iTw\nvlOCPfkpzVdk4DzB6N5Vz501UVsqx3cl6hkQwrF48WbhgzhiPDHxPaiGHttj+7wM\nPAtvX7ddBc3M4Hu599Utu1+E7cDpGY5T2fMRO3epxanYnX0HdoY4w6ftAoGBAJyp\nNFGjIHg4JLemm7nnEn1jgq6A4JUjh2Ak9TDknO5Gw/AJAqureUw2cA73UCKexd3n\nknG/vtpy/op8EUddBICnDfIFEkxnnlb3sY9LYVFZjjnTMH2qYPPTQ7YGxEiVHWIh\nGjGlTL89EE8kuk3ShkXTP1g1wdX9O9noWjvrADRZAoGBAO8tKUKgJ98B3Bsz+5Q1\nTSeoVqw/V30YJauc+kWMtR+MnI7/f7FhG68vcppnrs4i2r7GSiEOT+pbN+4JOYt9\nhZv6PSMkdRCVbHMZi3zgjhShMF9nqGJpgXb7Lm8P09ZPRoifQ1MtutYrf+WSJcjo\ndyJwzSrJjcTQjmvtyeyXQVaV\n-----END PRIVATE KEY-----\n",
+  "private_key_id": "your/private_key_id",
+  "private_key": "-----BEGIN PRIVATE KEY-----\your_private_key\n-----END PRIVATE KEY-----\n",
   "client_email": "hmac1-455@advanceddb-405622.iam.gserviceaccount.com",
-  "client_id": "115810725536664712081",
+  "client_id": "your_client_id",
   "auth_uri": "https://accounts.google.com/o/oauth2/auth",
   "token_uri": "https://oauth2.googleapis.com/token",
   "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
-  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/hmac1-455%40advanceddb-405622.iam.gserviceaccount.com",
+  "client_x509_cert_url": "your_client_x509_cert_url",
   "universe_domain": "googleapis.com"
 }
